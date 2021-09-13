@@ -1,3 +1,6 @@
+My first small react project. 
+Start using the app here: https://hanpham32.github.io/pomodoro-react/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
