@@ -4,7 +4,6 @@ import Timer from "./components/Timer";
 
 function App() {
   const [status, setStatus] = useState(false);
-  // const [running, setRunning] = useState(false);
 
   const lightTheme = {
     backgroundColor: "#ffd472",
@@ -16,8 +15,7 @@ function App() {
   };
 
   return (
-    <div className="App" style={status ? lightTheme:darkTheme}>
-      <span className="app-title">Pomodoro</span>
+    <div className="App" style={status ? lightTheme : darkTheme}>
       <Timer status={status} setStatus={setStatus} />
     </div>
   );

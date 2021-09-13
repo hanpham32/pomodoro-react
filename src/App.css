@@ -1,7 +1,3 @@
-/* html {
-  height: 100%;
-} */
-
 body {
   padding: 0;
   margin: 0;
@@ -11,7 +7,9 @@ body {
 
 .App {
   text-align: center;
-  padding-top: 347px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   height: 100vh;
 }
 
@@ -39,10 +37,10 @@ body {
 .btn button {
   width: 125px;
   height: 50px;
-  background-color: #393E46;
+  background-color: #393e46;
   border: none;
   text-align: center;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-size: 24px;
   border-radius: 50px;
   margin: 0.5em;

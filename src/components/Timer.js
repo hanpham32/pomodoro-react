@@ -8,26 +8,6 @@ const Timer = ({ status, setStatus }) => {
   const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
 
-  // useEffect(() => {
-  //   let interval = setInterval(() => {
-  //     if (seconds === 0) {
-  //       if (minutes === 0) {
-  //         setSeconds(59);
-  //         setMinutes(minutes - 1);
-  //       } else {
-  //         let minutes = status ? 24 : 4;
-  //         let seconds = 59;
-
-  //         setSeconds(seconds);
-  //         setMinutes(minutes);
-  //         setStatus(!status);
-  //       }
-  //     } else {
-  //       setSeconds(seconds - 1);
-  //     }
-  //   }, 1000);
-  // }, [seconds]);
-
   useEffect(() => {
     let interval;
     clearInterval(interval);
@@ -59,6 +39,7 @@ const Timer = ({ status, setStatus }) => {
 
   return (
     <div>
+      <span className="app-title">Pomodoro</span>
       <CurrentSession status={status} />
       <div className="status">
         <span>{timerMinutes}</span>:<span>{timerSeconds}</span> <br />

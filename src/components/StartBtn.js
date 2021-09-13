@@ -1,6 +1,5 @@
 import React from "react";
-const StartBtn = ({setStatus, status}) => {
-
+const StartBtn = ({ setStatus, status }) => {
   const lightTheme = {
     backgroundColor: "#222831",
     color: "white",
@@ -11,8 +10,13 @@ const StartBtn = ({setStatus, status}) => {
   };
 
   return (
-    <div className="btn" >
-      <button onClick={() => setStatus(prevStatus => status = true)}  style={status ? lightTheme:darkTheme}>Start</button>
+    <div className="btn">
+      <button
+        onClick={() => setStatus((prevStatus) => (status = true))}
+        style={status ? lightTheme : darkTheme}
+      >
+        Start
+      </button>
     </div>
   );
 };
