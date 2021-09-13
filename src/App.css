@@ -1,0 +1,49 @@
+/* html {
+  height: 100%;
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+.App {
+  text-align: center;
+  padding-top: 347px;
+  height: 100vh;
+}
+
+.app-title {
+  font-weight: bold;
+}
+
+.status {
+  padding: 0;
+  margin: 0;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.working {
+  color: #393e46;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn button {
+  width: 125px;
+  height: 50px;
+  background-color: #393E46;
+  border: none;
+  text-align: center;
+  color: #EEEEEE;
+  font-size: 24px;
+  border-radius: 50px;
+  margin: 0.5em;
+}
